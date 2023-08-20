@@ -40,7 +40,7 @@ body{
     box-shadow: 0 0 0 10px #4fc3dc44,
     0 0 50px #4fc3dc,
     0 0 100px #4fc3dc;
-    animation: animate 15s linear infinite;
+    animation: animate 1000s linear infinite;
     animation-duration: calc(500s / var(--i));
     z-index: -2;
 }
@@ -104,10 +104,24 @@ body{
 }
 
 .btn{
-    display: grid;
-    height: 30px;
-    width: 200px;
-    column-gap: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #5e17eb;
+    color: white;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 @keyframes slider{
@@ -117,7 +131,6 @@ body{
 
     100%{
         width: 80px;
-
     }
 }
 
