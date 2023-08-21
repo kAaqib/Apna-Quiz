@@ -150,6 +150,20 @@ body{
     margin: 100px;
 }
 
+.agegroups{
+    position: absolute;
+    width: 300px;
+    top: 150px;
+    right: 20%;
+    row-gap: 12px;
+}
+
+#agegroup{
+    cursor: pointer;
+    margin-top: 50px;
+    width: 400px;
+}
+
 .stop
 {
     transition: 0.1s;
