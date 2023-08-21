@@ -142,7 +142,16 @@ body{
     padding: 10px;
 }
 
-.btn:hover{
+.stop
+{
+    transition: 0.1s;
+}
+
+.move
+{
+    transform: translateX(100%);
+}
+#contbtn:hover{
     cursor: pointer;
 }
 
