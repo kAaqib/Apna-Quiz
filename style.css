@@ -43,7 +43,7 @@ body{
     animation: animate 1000s linear infinite;
     animation-duration: calc(500s / var(--i));
     z-index: -2;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 .bubbles span:nth-child(even)
 {
@@ -140,6 +140,14 @@ body{
     border: none;
     border-radius: 30px;
     padding: 10px;
+}
+
+.introage{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 100px;
 }
 
 .stop
