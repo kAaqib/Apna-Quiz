@@ -1,2 +1,2 @@
 # Apna-Quiz
-This is a quiz web application for different age groups with some 3D animations.
+Used basics of HTML, CSS and JavaScript to build this dynamic 3D Quiz Game.
