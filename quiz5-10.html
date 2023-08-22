@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Age</title>
+    <title>Quiz 5-10</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -69,22 +69,30 @@
             </ul>
         </div>
     </nav>
-    <div class="introage">
-        <div class="your">
-            <h6>Age Matters</h6>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="a" name="answer" class="answer" />
+                    <label id="a_text" for="a">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="b" name="answer" class="answer" />
+                    <label id="b_text" for="b">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="c" name="answer" class="answer" />
+                    <label id="c_text" for="c">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="d" name="answer" class="answer" />
+                    <label id="d_text" for="d">Question</label>
+                </li>
+            </ul>
         </div>
-        <div class="introbtn">
-            <a href="yourname.html"><button class="btn">Back</button></a>
-        </div>
+        <button class="btn" id="submit">Submit</button>
     </div>
-    <div class="agegroups">
-        <ul>
-            <a href="quiz5-10.html"><button id="agegroup" class="btn">5-10</button></a>
-            <a href="quiz11-15.html"><button id="agegroup" class="btn">11-15</button></a>
-            <a href="quiz16-20.html"><button id="agegroup" class="btn">16-20</button></a>
-            <a href="quiz21-30.html"><button id="agegroup" class="btn">21-30</button></a>
-            <a href="quiz30+.html"><button id="agegroup" class="btn">30+</button></a>
-        </ul>
-    </div>
+    <script src="quiz5-10.html"></script>
 </body>
 </html>
