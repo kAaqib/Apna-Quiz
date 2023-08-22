@@ -202,29 +202,42 @@ ul li label {
     cursor: pointer;
 }
 
-#submit{
+#submit {
     border: 1px white solid;
     margin-bottom: 10px;
 }
 
-.stop
-{
+.stop {
     transition: 0.1s;
 }
 
-.move
-{
+.move {
     transform: translateX(100%);
 }
+
 #contbtn:hover{
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-
+.qnav {
+    position: absolute;
+    top: 350px;
+    right: 10%;
+    width: 400px;
+}
+.qnavbtn {
+    background-color: #5e17eb;
+    width: 60px;
+    height: 60px; 
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
 @keyframes slider{
     0%{
         width: 0;
