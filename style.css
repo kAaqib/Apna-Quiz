@@ -207,6 +207,22 @@ ul li label {
     margin-bottom: 10px;
 }
 
+.footer{
+    background-color: #5e17eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 625px;
+}
+
+.footquiz{
+    background-color: #5e17eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2300px;
+}
+
 .stop {
     transition: 0.1s;
 }
