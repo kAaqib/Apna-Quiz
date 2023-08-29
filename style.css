@@ -159,7 +159,7 @@ body{
     row-gap: 12px;
 }
 
-#agegroup{
+.agebtn{
     cursor: pointer;
     margin-top: 50px;
     width: 400px;
