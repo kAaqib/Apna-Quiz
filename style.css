@@ -205,6 +205,7 @@ ul li label {
 #submit {
     border: 1px white solid;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .stop {
@@ -238,6 +239,25 @@ a {
     color: white;
     font-size: 20px;
 }
+
+.img{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#picname{
+    color: white;
+}
+
+#img1{
+    width: 150px;
+    height: 150px;
+}
+
+
+
 @keyframes slider{
     0%{
         width: 0;
