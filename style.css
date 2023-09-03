@@ -104,6 +104,13 @@ body{
     margin-top: 250px;
 }
 
+.HelloName {
+    position: absolute;
+    font-size: 90px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 80px;
+}
 .btn{
     justify-content: center;
     align-items: center;

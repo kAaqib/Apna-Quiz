@@ -1,12 +1,27 @@
 const nameinput = document.getElementById("yourname");
 const contbtn = document.getElementById("contbtn");
+if (contbtn) {
+    contbtn.addEventListener("mouseover", (button)=>{
+        let name = nameinput.value;
+        if (!name) {
+            button.target.classList.toggle("move");
+        }
+    })
+}
 
-contbtn.addEventListener("mouseover", (button)=>{
-    let name = nameinput.value;
-    if (!name) {
-        button.target.classList.toggle("move");
-    }
-})
+const HelloName = document.getElementById("UserName");
+
+if (contbtn) {
+    contbtn.addEventListener("click", ()=>{
+        var value = nameinput.value;
+        localStorage.setItem("myName", value);
+    })
+}
+
+if (HelloName) {
+    var value = localStorage.getItem("myName");
+    HelloName.innerText = "Hello, "+value;
+}
 
 // const quiz510 = document.getElementById("age5-10");
 // const quiz1115 = document.getElementById("age11-15");
