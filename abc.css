@@ -9,14 +9,14 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #25252b;
+    background: #120037;
   }
   
   .box {
     position: relative;
     width: 400px;
     height: 400px;
-    background: repeating-conic-gradient(from var(--a), #ff2770 0%, #ff2770 5%, transparent 5%, transparent 5%, transparent 40%, #ff2770 50%);
+    background: repeating-conic-gradient(from var(--a), #5e17eb 0%, #5e17eb 5%, transparent 5%, transparent 5%, transparent 40%, #5e17eb 50%);
     animation: animate 4s linear infinite;
     border-radius: 20px;
   }
@@ -39,10 +39,10 @@
   
 .box::before {
     content: '';
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 5%, transparent 5%, transparent 5%, transparent 40%, #45f3ff 50%);
+    background: repeating-conic-gradient(from var(--a), #5e17eb 0%, #5e17eb 5%, transparent 5%, transparent 5%, transparent 40%, #5e17eb 50%);
     animation: animate 4s linear infinite;
     animation-delay: -1s;
     border-radius: 20px;
@@ -52,7 +52,7 @@
     content: '';
     position: absolute;
     inset: 8px;
-    background: #2d2d39;
+    background: #120037;
     border-radius: 15px;
-    border: 8px solid #25252b;
+    border: 8px solid #120037;
 }
