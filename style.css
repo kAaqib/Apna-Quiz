@@ -161,12 +161,14 @@ body{
 .topic-level{
     position: absolute;
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 700px;
-    height: 400px;
-    top: 150px;
-    right: 8%;
+    column-gap: 20px;
+    row-gap: 20px;
+    top: 250px;
+    right: 5%;
     color: #fff;
 }
 
@@ -175,7 +177,7 @@ body{
     align-items: center;
     justify-content: start;
     height: 100px;
-    width: 200px;
+    width: 220px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: none;
@@ -198,7 +200,9 @@ label{
 }
 
 input:checked + label {
-    color: #120037;
+    color:#ffffff;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .level{
@@ -303,8 +307,6 @@ a {
     width: 150px;
     height: 150px;
 }
-
-
 
 @keyframes slider{
     0%{
