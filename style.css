@@ -181,14 +181,20 @@ body{
     box-shadow: none;
     background-color: #5e17eb;
     font-size: 25px;
+    cursor: pointer;
 }
 
+.topic-level-cards:hover{
+    transition: 0.4s;
+    transform: translate(-3px, -3px);
+}
 
+label{
+    cursor: pointer;
+}
 
 .topic{
-    margin: 8px;
     visibility: hidden;
-    cursor: pointer;
 }
 
 input:checked + label {
@@ -196,9 +202,7 @@ input:checked + label {
 }
 
 .level{
-    margin: 8px;
     visibility: hidden;
-    cursor: pointer;
 }
 
 .agebtn{
