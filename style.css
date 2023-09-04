@@ -209,6 +209,11 @@ input:checked + label {
     visibility: hidden;
 }
 
+.HelloName{
+    display: flex;
+    font-size: 80px;
+}
+
 .agebtn{
     cursor: pointer;
     margin-top: 50px;
