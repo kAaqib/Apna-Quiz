@@ -183,12 +183,22 @@ body{
     font-size: 25px;
 }
 
+
+
 .topic{
     margin: 8px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+input:checked + label {
+    color: #120037;
 }
 
 .level{
     margin: 8px;
+    visibility: hidden;
+    cursor: pointer;
 }
 
 .agebtn{
