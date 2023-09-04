@@ -150,7 +150,7 @@ body{
     padding: 10px;
 }
 
-.introage{
+.intro-topic-level{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -158,13 +158,37 @@ body{
     margin: 100px;
 }
 
-.agegroups{
+.topic-level{
     position: absolute;
-    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 700px;
+    height: 400px;
     top: 150px;
-    right: 20%;
-    row-gap: 12px;
+    right: 8%;
     color: #fff;
+}
+
+.topic-level-cards{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: #5e17eb;
+    font-size: 25px;
+}
+
+.topic{
+    margin: 8px;
+}
+
+.level{
+    margin: 8px;
 }
 
 .agebtn{
@@ -247,6 +271,8 @@ a {
     color: white;
     font-size: 20px;
 }
+
+.age
 
 .img{
     display: grid;
