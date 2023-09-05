@@ -20,7 +20,7 @@ if (contbtn) {
 
 if (HelloName) {
     var value = localStorage.getItem("myName");
-    HelloName.innerText = "Hello, \n"+value;
+    HelloName.innerText = "Hello, "+value;
 }
 
  
