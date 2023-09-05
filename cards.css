@@ -63,7 +63,7 @@ filter: blur (0px);
 .container box ion-icon
 {
 position:absolute;
-font-size. Mem;
+font-size: Mem;
 transition: 0.5s;
 transition-delay: 0s;
 opacity:0;
@@ -85,7 +85,7 @@ box-shadow: 0 0 0 18px #020d1e;
 {
 position: absolute;
 inset: 0; 
-background: #028dle;
+background: #028d1e;
 transition: 0.25s
 }
 .container .box .clip span:nth-child(1)
@@ -105,7 +105,7 @@ transition-delay: 0.25s;
 }
 .container .box:hover .clip span:nth-child(2)
 {
-clip-path: polygone 8, 48% 50%, 50% 100%, 0% 100%)];
+clip-path: polygon (8, 48% 50%, 50% 100%, 0% 100%);
 }
 
 .container .box .clip span:nth-child(3)
