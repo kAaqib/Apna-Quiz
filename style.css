@@ -295,22 +295,36 @@ a {
     font-size: 20px;
 }
 
-.age
+.img-grp1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
 
-.img{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.img-grp2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #picname{
     color: white;
+    font-size: 25px;
+    padding: 20px;
 }
 
 #img1{
-    width: 150px;
-    height: 150px;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
 }
 
 @keyframes slider{
