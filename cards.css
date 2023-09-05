@@ -115,5 +115,5 @@ transition-delay: 0.5s;
 }
 .container .box:hover .clip span:nth-child(3)
 {
-clip-path: polygon (60% 50%, 100% 0, 100% 100%, 50% 100%);
+clip-path: polygon (100% 100%, 100% 0, 100% 100%, 50% 100%);
 }
