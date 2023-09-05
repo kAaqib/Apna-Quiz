@@ -230,8 +230,36 @@ input:checked + label {
     overflow: hidden;
     width: 600px;
     max-width: 100%;
-    background-color: #5e17eb;
+    /* background-color: #5e17eb; */
+    background: repeating-conic-gradient(from var(--a), #5e17eb 0%, #5e17eb 5%, transparent 5%, transparent 5%, transparent 40%, #5e17eb 50%);
+    animation: animateCone 4s linear infinite;
 }
+
+.quiz-container::after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    background: #120037;
+    border-radius: 15px;
+    border: 8px solid #120037;
+    z-index: -1;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+@keyframes animateCone {
+    0% {
+      --a: 0deg;
+    }
+  
+    100% {
+      --a: 360deg;
+    }
+  }
 
 .quiz-header {
     padding: 4rem;
