@@ -37,7 +37,7 @@
     }
   }
   
-.box::before {
+.box:before {
     content: '';
     position: relative;
     width: 100%;
@@ -48,11 +48,21 @@
     border-radius: 20px;
 }
 
-.box::after {
+.box:after {
     content: '';
+    display: block;
+    color: white;
+    font-size: 30px;
     position: absolute;
     inset: 8px;
     background: #120037;
     border-radius: 15px;
     border: 8px solid #120037;
+}
+
+.qtext {
+  z-index: 9;
+  color: #fff;
+  font-size: 30px;
+  padding-right: 200px;
 }
