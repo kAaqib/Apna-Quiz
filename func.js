@@ -224,7 +224,7 @@ const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 
-
+const q1 = document.getElementById("")
 if (quiz) {
     let quizData = undefined;
     let topic = localStorage.getItem("topic");
