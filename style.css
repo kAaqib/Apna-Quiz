@@ -104,13 +104,6 @@ body{
     margin-top: 250px;
 }
 
-.HelloName {
-    position: absolute;
-    font-size: 90px;
-    color: white;
-    margin-left: 100px;
-    margin-top: 80px;
-}
 .btn{
     justify-content: center;
     align-items: center;
@@ -148,6 +141,26 @@ body{
     border: none;
     border-radius: 30px;
     padding: 10px;
+}
+
+.stop {
+    transition: 0.1s;
+}
+
+.move {
+    transform: translateX(100%);
+}
+
+#contbtn:hover{
+    cursor: pointer;
+}
+
+.HelloName {
+    position: absolute;
+    font-size: 90px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 80px;
 }
 
 .intro-topic-level{
@@ -293,18 +306,6 @@ ul li label {
     border: 1px white solid;
     margin-bottom: 10px;
     margin-left: 20px;
-}
-
-.stop {
-    transition: 0.1s;
-}
-
-.move {
-    transform: translateX(100%);
-}
-
-#contbtn:hover{
-    cursor: pointer;
 }
 
 a {
