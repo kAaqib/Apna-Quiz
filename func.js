@@ -224,7 +224,17 @@ const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 
-const q1 = document.getElementById("")
+const q1 = document.getElementById("q1");
+const q2 = document.getElementById("q2");
+const q3 = document.getElementById("q3");
+const q4 = document.getElementById("q4");
+const q5 = document.getElementById("q5");
+const q6 = document.getElementById("q6");
+const q7 = document.getElementById("q7");
+const q8 = document.getElementById("q8");
+const q9 = document.getElementById("q9");
+const q10 = document.getElementById("q10");
+
 if (quiz) {
     let quizData = undefined;
     let topic = localStorage.getItem("topic");
@@ -241,9 +251,8 @@ if (quiz) {
     let score = 0;
 
     loadQuiz();
-
+    deselectAnswers();
     function loadQuiz() {
-        deselectAnswers();
         const currentQuizData = quizData[currentQuiz];
         questionEl.innerText = currentQuizData.question;
         a_text.innerText = currentQuizData.a;
@@ -281,5 +290,46 @@ if (quiz) {
                 quiz.innerHTML=` <h2>You answered correctly at ${score}/${quizData.length} questions.</h2><button onclick="#">Reload</button>`;
             }
         }
+    });
+
+    q1.addEventListener("click", () => {
+        currentQuiz = 0;
+        loadQuiz();
+    });
+    q2.addEventListener("click", () => {
+        currentQuiz = 1;
+        loadQuiz();
+    });
+    q3.addEventListener("click", () => {
+        currentQuiz = 2;
+        loadQuiz();
+    });
+    q4.addEventListener("click", () => {
+        currentQuiz = 3;
+        loadQuiz();
+    });
+    q5.addEventListener("click", () => {
+        currentQuiz = 4;
+        loadQuiz();
+    });
+    q6.addEventListener("click", () => {
+        currentQuiz = 5;
+        loadQuiz();
+    });
+    q7.addEventListener("click", () => {
+        currentQuiz = 6;
+        loadQuiz();
+    });
+    q8.addEventListener("click", () => {
+        currentQuiz = 7;
+        loadQuiz();
+    });
+    q9.addEventListener("click", () => {
+        currentQuiz = 8;
+        loadQuiz();
+    });
+    q10.addEventListener("click", () => {
+        currentQuiz = 9;
+        loadQuiz();
     });
 }
