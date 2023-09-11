@@ -113,8 +113,14 @@ body{
     border-radius: 20px;
     background-color: #5e17eb;
     color: white;
-    border: none;
+    border: #5e17eb;
+    border-style:solid;
     cursor: pointer;
+}
+
+.btn:hover {
+    width: 210px;
+    height: 45px;
 }
 
 .introname{
@@ -326,6 +332,13 @@ a {
     margin: 5px;
     color: white;
     font-size: 20px;
+    border-style: solid;
+    border: #5e17eb;
+}
+
+.qnavbtn:hover {
+    width: 65px;
+    height: 65px;
 }
 
 .img-grp1{

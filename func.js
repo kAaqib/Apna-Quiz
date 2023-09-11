@@ -1,26 +1,28 @@
 const nameinput = document.getElementById("yourname");
 const contbtn = document.getElementById("contbtn");
+
 if (contbtn) {
-    contbtn.addEventListener("mouseover", (button)=>{
-        let name = nameinput.value;
-        if (!name) {
-            button.target.classList.toggle("move");
-        }
-    })
+  contbtn.addEventListener("mouseover", (button)=>{
+    let name = nameinput.value;
+    if (!name) {
+      button.target.classList.toggle("move");
+    }
+  })
 }
 
 if (contbtn) {
-    contbtn.addEventListener("click", ()=>{
-        var value = nameinput.value;
-        localStorage.setItem("myName", value);
-    })
+  contbtn.addEventListener("click", ()=>{
+    var value = nameinput.value;
+    localStorage.setItem("myName", value);
+    window.location.href = "topic.html";
+  })
 }
 
 const HelloName = document.getElementById("UserName");
 
 if (HelloName) {
-    var value = localStorage.getItem("myName");
-    HelloName.innerText = "Hello, "+value;
+  var value = localStorage.getItem("myName");
+  HelloName.innerText = "Hello, "+value;
 }
 
 const quiz11 = [
@@ -774,21 +776,49 @@ const topicEls = document.querySelectorAll(".topic");
 const levelEls = document.querySelectorAll(".level");
 const selbtn = document.getElementById("selbtn");
 
+const gk = document.getElementById("gk");
+const sci = document.getElementById("sci");
+const math = document.getElementById("math");
+const l1 = document.getElementById("l1");
+const l2 = document.getElementById("l2");
+const l3 = document.getElementById("l3");
+
+
+
 if (selbtn) {
-    selbtn.addEventListener("click", ()=>{
-        let topic = undefined;
-        let level = undefined;
-        topicEls.forEach(topicEls => {
-            if (topicEls.checked)
-                topic = topicEls.id;
-        })
-        levelEls.forEach(levelEls => {
-            if (levelEls.checked)
-                level = levelEls.id;
-        })
-        localStorage.setItem("topic", topic);
-        localStorage.setItem("level", level);
+  gk.addEventListener("click", () => {
+    topicEls[0].checked = true;
+  });
+  sci.addEventListener("click", () => {
+    topicEls[1].checked = true;
+  });
+  math.addEventListener("click", () => {
+    topicEls[2].checked = true;
+  });
+  l1.addEventListener("click", () => {
+    levelEls[0].checked = true;
+  });
+  l2.addEventListener("click", () => {
+    levelEls[1].checked = true;
+  });
+  l3.addEventListener("click", () => {
+    levelEls[2].checked = true;
+  });
+  
+  selbtn.addEventListener("click", ()=>{
+    let topic = undefined;
+    let level = undefined;
+    topicEls.forEach(topicEls => {
+      if (topicEls.checked)
+        topic = topicEls.id;
     })
+    levelEls.forEach(levelEls => {
+      if (levelEls.checked)
+        level = levelEls.id;
+    })
+    localStorage.setItem("topic", topic);
+    localStorage.setItem("level", level);
+  })
 }
 
 const quiz = document.getElementById("quiz");
