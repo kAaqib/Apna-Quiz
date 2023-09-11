@@ -14,7 +14,8 @@ if (contbtn) {
   contbtn.addEventListener("click", ()=>{
     var value = nameinput.value;
     localStorage.setItem("myName", value);
-    window.location.href = "topic.html";
+    if (value)
+      window.location.href = "topic.html";
   })
 }
 
@@ -875,6 +876,10 @@ if (quiz) {
   
   function loadQuiz() {
       deselectAnswers();
+      if (currentQuiz === 9)
+        submitBtn.innerHTML = "Submit";
+      else
+        submitBtn.innerHTML = "Next";q
       const currentQuizData = quizData[currentQuiz];
       questionEl.innerText = currentQuizData.question;
       a_text.innerText = currentQuizData.a;
