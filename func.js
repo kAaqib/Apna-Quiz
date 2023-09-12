@@ -879,7 +879,7 @@ if (quiz) {
       if (currentQuiz === 9)
         submitBtn.innerHTML = "Submit";
       else
-        submitBtn.innerHTML = "Next";q
+        submitBtn.innerHTML = "Next";
       const currentQuizData = quizData[currentQuiz];
       questionEl.innerText = currentQuizData.question;
       a_text.innerText = currentQuizData.a;
