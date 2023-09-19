@@ -914,7 +914,7 @@ if (quiz) {
           if (currentQuiz < quizData.length) { 
               loadQuiz(); 
           } else { 
-              quiz.innerHTML=`<h2>You answered correctly at ${score}/${quizData.length} questions.<br><br><a href="topic.html"><button class="btn">Play again<button/></a>`;
+              quiz.innerHTML=`<h2 style="margin-top: 150px">You answered  ${score}/${quizData.length} questions correctly.<br><br><a href="topic.html"><button class="btn">Play again</button></a><br><br><a href="feedback.html"><button class="btn">Give your feedback</button></a></h2>`;
           }
       }
   });
