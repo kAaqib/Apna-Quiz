@@ -1,3 +1,16 @@
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const logsub = document.getElementById("logsub");
+
+if (logsub) {
+  logsub.addEventListener("click", ()=>{
+    var un = username.value;
+    var pw = password.value;
+    if (un && pw)
+      window.location.href = "home.html";
+  })
+}
+
 const nameinput = document.getElementById("yourname");
 const contbtn = document.getElementById("contbtn");
 
@@ -830,6 +843,9 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
+const b4sub = document.getElementById("beforesub");
+const afsub = document.getElementById("aftersub");
+const res = document.getElementById("res");
 
 const q1 = document.getElementById("q1");
 const q2 = document.getElementById("q2");
@@ -876,7 +892,7 @@ if (quiz) {
   
   function loadQuiz() {
       deselectAnswers();
-      if (currentQuiz === 9)
+      if (currentQuiz === quizData.length - 1)
         submitBtn.innerHTML = "Submit";
       else
         submitBtn.innerHTML = "Next";
@@ -913,8 +929,15 @@ if (quiz) {
           currentQuiz++;
           if (currentQuiz < quizData.length) { 
               loadQuiz(); 
-          } else { 
-              quiz.innerHTML=`<h2 style="margin-top: 150px">You answered  ${score}/${quizData.length} questions correctly.<br><br><a href="topic.html"><button class="btn">Play again</button></a><br><br><a href="feedback.html"><button class="btn">Give your feedback</button></a></h2>`;
+          } else {
+              if (b4sub.style.display === "block") {
+                b4sub.style.display = "none";
+                afsub.style.display = "block";
+              } else {
+                b4sub.style.display = "block";
+                afsub.style.display = "none";
+              }
+              res.innerHTML=`You answered  ${score}/${quizData.length} questions correctly.`;
           }
       }
   });

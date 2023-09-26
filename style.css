@@ -10,6 +10,29 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.login {
+    margin-left: 500px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 8.5rem;
+}
+
+.form label {
+    font-size: 20px;
+}
+.form input {
+    height: 20px;
+    width: 285px;
+    font-size: 20px;
+    background-color: #5e17eb;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+
 .container
 {
     position: absolute;
@@ -220,7 +243,6 @@ label{
 
 input:checked + label {
     color:#ffffff;
-    font-size: 28px;
     font-weight: 700;
 }
 
@@ -239,7 +261,7 @@ input:checked + label {
     width: 400px;
 }
 
-.quiz-container {
+.box{
     position: absolute;
     color: #fff;
     border-radius: 10px;
@@ -249,7 +271,6 @@ input:checked + label {
     height: 580px;
     max-width: 100%;
     background-color: #120037;
-    
 }
 
 .bg {
@@ -380,9 +401,12 @@ a {
     flex-direction: column;
     color: white;
     background-color: #5e17eb;
+    border-radius: 15px;
     width: 1210px;
     padding: 50px;
-    margin: 100px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     margin-bottom: 280px;
 }
@@ -393,7 +417,7 @@ a {
 
 @keyframes slider{
     0%{
-        width: 0;
+        width: 1px;
     }
 
     100%{

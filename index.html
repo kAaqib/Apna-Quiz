@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apna Quiz</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="func.js">
-    <link rel="icon" href="aq.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
@@ -57,27 +53,22 @@
             <span style="--i:28;"></span>
         </div>
     </div>
-    <nav>
-        <div class="nav">
-            <ul>
-                <li>
-                    <div style="--i:4" class="line"></div>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <div style="--i:4" class="line"></div>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="intro">
-        <div class="name">
-            Apna Quiz
-        </div>
-        <div class="introbtn">
-            <a href="yourname.html"><button class="btn">Start</button></a>
+    <h2 style="color: white; margin-top: 30px;">Login</h2>
+    <div class="login">
+        <div class="bg">
+            <div class="box">
+                <div class="form">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required><br><br>
+
+                    <button id="logsub" class="btn" style="align-self: center;">Submit</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="func.js"></script>
 </html>
