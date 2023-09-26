@@ -885,23 +885,23 @@ if (quiz) {
   if (topic === "Mathematics" && level==="Level 3")
       quizData = quiz33;
 
-  let currentQuiz = 0;
+  let qno = 0;
   let score = 0;
 
   loadQuiz();
   
   function loadQuiz() {
       deselectAnswers();
-      if (currentQuiz === quizData.length - 1)
+      if (qno === quizData.length - 1)
         submitBtn.innerHTML = "Submit";
       else
         submitBtn.innerHTML = "Next";
-      const currentQuizData = quizData[currentQuiz];
-      questionEl.innerText = currentQuizData.question;
-      a_text.innerText = currentQuizData.a;
-      b_text.innerText = currentQuizData.b;
-      c_text.innerText = currentQuizData.c;
-      d_text.innerText = currentQuizData.d;
+      const CurrData = quizData[qno];
+      questionEl.innerText = CurrData.question;
+      a_text.innerText = CurrData.a;
+      b_text.innerText = CurrData.b;
+      d_text.innerText = CurrData.d;
+      c_text.innerText = CurrData.c;
   }
 
   function getSelected() {
@@ -923,11 +923,11 @@ if (quiz) {
   submitBtn.addEventListener("click", () => {
       const answer = getSelected();
       if (answer) {
-          if (answer === quizData[currentQuiz].ans) {
+          if (answer === quizData[qno].ans) {
               score++;    
           }
-          currentQuiz++;
-          if (currentQuiz < quizData.length) { 
+          qno++;
+          if (qno < quizData.length) { 
               loadQuiz(); 
           } else {
               if (b4sub.style.display === "block") {
@@ -943,43 +943,43 @@ if (quiz) {
   });
 
   q1.addEventListener("click", () => {
-      currentQuiz = 0;
+      qno = 0;
       loadQuiz();
   });
   q2.addEventListener("click", () => {
-      currentQuiz = 1;
+      qno = 1;
       loadQuiz();
   });
   q3.addEventListener("click", () => {
-      currentQuiz = 2;
+      qno = 2;
       loadQuiz();
   });
   q4.addEventListener("click", () => {
-      currentQuiz = 3;
+      qno = 3;
       loadQuiz();
   });
   q5.addEventListener("click", () => {
-      currentQuiz = 4;
+      qno = 4;
       loadQuiz();
   });
   q6.addEventListener("click", () => {
-      currentQuiz = 5;
+      qno = 5;
       loadQuiz();
   });
   q7.addEventListener("click", () => {
-      currentQuiz = 6;
+      qno = 6;
       loadQuiz();
   });
   q8.addEventListener("click", () => {
-      currentQuiz = 7;
+      qno = 7;
       loadQuiz();
   });
   q9.addEventListener("click", () => {
-      currentQuiz = 8;
+      qno = 8;
       loadQuiz();
   });
   q10.addEventListener("click", () => {
-      currentQuiz = 9;
+      qno = 9;
       loadQuiz();
   });
 }
